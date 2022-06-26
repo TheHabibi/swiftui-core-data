@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0919281E2868CC1F00A61600 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0919281D2868CC1F00A61600 /* StudentView.swift */; };
+		095844802868D89B00595B0F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0958447F2868D89B00595B0F /* DetailView.swift */; };
 		099450622866722400DDE0E5 /* swiftui_core_dataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099450612866722400DDE0E5 /* swiftui_core_dataApp.swift */; };
 		099450642866722400DDE0E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099450632866722400DDE0E5 /* ContentView.swift */; };
 		099450662866722600DDE0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099450652866722600DDE0E5 /* Assets.xcassets */; };
 		099450692866722600DDE0E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 099450682866722600DDE0E5 /* Preview Assets.xcassets */; };
 		0994506B2866722600DDE0E5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0994506A2866722600DDE0E5 /* Persistence.swift */; };
 		0994506E2866722600DDE0E5 /* swiftui_core_data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0994506C2866722600DDE0E5 /* swiftui_core_data.xcdatamodeld */; };
-		099450762866726E00DDE0E5 /* Student.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 099450742866726E00DDE0E5 /* Student.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0919281D2868CC1F00A61600 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
+		0958447F2868D89B00595B0F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		0994505E2866722400DDE0E5 /* swiftui-core-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-core-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		099450612866722400DDE0E5 /* swiftui_core_dataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_core_dataApp.swift; sourceTree = "<group>"; };
 		099450632866722400DDE0E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,7 +27,6 @@
 		099450682866722600DDE0E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0994506A2866722600DDE0E5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0994506D2866722600DDE0E5 /* swiftui_core_data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = swiftui_core_data.xcdatamodel; sourceTree = "<group>"; };
-		099450752866726E00DDE0E5 /* Student.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Student.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0919281C2868CC1000A61600 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				099450632866722400DDE0E5 /* ContentView.swift */,
+				0919281D2868CC1F00A61600 /* StudentView.swift */,
+				0958447F2868D89B00595B0F /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		099450552866722400DDE0E5 = {
 			isa = PBXGroup;
 			children = (
@@ -57,13 +69,12 @@
 		099450602866722400DDE0E5 /* swiftui-core-data */ = {
 			isa = PBXGroup;
 			children = (
+				0919281C2868CC1000A61600 /* Views */,
 				099450612866722400DDE0E5 /* swiftui_core_dataApp.swift */,
-				099450632866722400DDE0E5 /* ContentView.swift */,
 				099450652866722600DDE0E5 /* Assets.xcassets */,
 				0994506A2866722600DDE0E5 /* Persistence.swift */,
 				0994506C2866722600DDE0E5 /* swiftui_core_data.xcdatamodeld */,
 				099450672866722600DDE0E5 /* Preview Content */,
-				099450742866726E00DDE0E5 /* Student.xcdatamodeld */,
 			);
 			path = "swiftui-core-data";
 			sourceTree = "<group>";
@@ -147,9 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0994506B2866722600DDE0E5 /* Persistence.swift in Sources */,
+				095844802868D89B00595B0F /* DetailView.swift in Sources */,
 				099450642866722400DDE0E5 /* ContentView.swift in Sources */,
-				099450762866726E00DDE0E5 /* Student.xcdatamodeld in Sources */,
 				0994506E2866722600DDE0E5 /* swiftui_core_data.xcdatamodeld in Sources */,
+				0919281E2868CC1F00A61600 /* StudentView.swift in Sources */,
 				099450622866722400DDE0E5 /* swiftui_core_dataApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,16 +370,6 @@
 			);
 			currentVersion = 0994506D2866722600DDE0E5 /* swiftui_core_data.xcdatamodel */;
 			path = swiftui_core_data.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		099450742866726E00DDE0E5 /* Student.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				099450752866726E00DDE0E5 /* Student.xcdatamodel */,
-			);
-			currentVersion = 099450752866726E00DDE0E5 /* Student.xcdatamodel */;
-			path = Student.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
